@@ -1,0 +1,280 @@
+/* CSS Document */
+
+@media only screen and  (min-width: 50px){
+	.mymenu{
+	  height: 100%;
+  	  width: 0;
+  	  position: fixed;
+  	  z-index: 1;
+  	  top: 0;
+  	  left: 0;
+  	  background-color: rgb(0,0,0);
+  	  background-color: rgba(0,0,0, 0.9);
+  	  overflow-x: hidden;
+  	  transition: 0.5s;
+	}
+	.lool{
+	  position: relative;
+	  top: 5%;
+	  width: 100%;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	  text-align: right;
+	  margin-top: 30px;
+	}
+
+	.itemmenu a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 28px;
+	  color: #818181;
+	  display: block;
+	  text-transform: uppercase;
+	  transition: 0.3s;
+	}
+
+	.mymenu a:hover, .mymenu a:focus {
+	  color: #f1f1f1;
+	}
+
+	.mymenu .closebtn {
+	  position: absolute;
+	  top: -20%;
+	  right: 5px;
+	  font-size: 60px;
+	}
+	#close{
+		color: white;
+	}
+	.nameTitle{
+			font-size: 2em;
+			color: white;
+			text-align: left;
+			padding-bottom: 1em;
+			letter-spacing: 0.2em;
+			}
+	
+	.redees{
+			display: inline-flex;
+			padding-top: 15px;
+			position: relative;	
+			}
+			.redes{
+				width: 1.7em;
+				height: 1.7em;
+				border-radius:50%;
+				background-color:rgba(255, 255, 255, 0.75);
+				text-align: center;
+				font-size:1.7em;
+				transition: background-color 1s;
+				margin: 0 0.1em 0.1em 0.1em;
+			}
+			.redes a{
+				color: black;
+			}
+			.redes:hover{
+				background-color: black!important;
+			}
+
+}
+
+@media(min-height:100px) and (max-height:700px) and (min-width: 1220px){
+	.lool{ top: 0px; }.mymenu{top: 25%!important}
+}
+
+@media only screen and  (min-width: 1220px){
+	
+	/******SIDEBAR******/
+	.sidebar {
+	  position:fixed;
+	  width: 25%;
+	  height:  100vh;
+	  background-image: url("../imagenes/fondo.jpg")!important;
+	  background: #312450;
+	  font-size: 0.65em;
+	}
+	
+		/*MENU: todo lo que esta relacionado con el menu lo podemos encontrar apratir de este apartado*/	
+	.mymenu{
+		  width: 80%;
+		  height: 100%;
+		  display: block!important;
+		  background-color: #00000000;
+		  position: relative ;
+		  margin: 0 15%;
+		  text-align: right;
+		  top: 50%;
+		  transform: translateY(-50%);
+		  font-weight: bold;
+		  overflow-x:inherit;
+		}
+	
+			/* Quitar Clases Menu Responsive Mobil*/
+			.lool{ top: 20%; text-align: right;bottom: 10%;padding-right: 0px;padding-left: 0px; }
+			.mymenu a:hover, .mymenu a:focus { color:white;}
+			.closebtn{ display: none!important;}
+			#open{ display:none; }
+			.mymenu a {
+			  padding: 0px;
+			  text-decoration: none;
+			  font-size: 1.2em;
+			  transition: color 1s;
+			}
+			/******Quitar******/
+	
+			
+			
+			/*NameTitle Es mi nombre el cual esta en la parte superior del menu o barra lateral izquierda */
+			.nameTitle{
+				font-size: 2.5em;
+			}
+	
+			/*ITEMMENU: Son los apartados del menu que nos permite navegar por nuestra pagina web*/
+			.itemmenu {
+				position: relative;
+				margin: 1.5em 0;
+			 }
+
+			.itemmenu a {
+				line-height: 5em;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0.3em;
+				color: rgba(255, 255, 255,0.35)!important;
+				display: block;
+				transition: all ease-out 300ms;
+			}
+	
+			.itemmenu ::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 0.2em;
+				background: black;
+				left: 0;
+				bottom: 0;
+				background-image: linear-gradient(to right, #5e42a6, #b74e91)
+			}
+	
+			.active a {color: white!important;}
+			:not(.active).itemmenu ::after {opacity: 0.2;}
+			.itemmenu a:hover{color: rgba(255, 255, 255,1)!important;}
+			.itemmenu:hover ::after {opacity: 0.9;}
+
+		   
+			/*Este es el apartado de la redes sociales el cual se puede encontrar en el apartado inferior del menu lateral*/
+			.redees{
+				padding-top: 0px;
+				padding-bottom: 1.7em;
+			}
+			.redees ::after {
+				  content: '';
+				  position: absolute;
+				  width:100%;
+				  height: 0.1em;
+				  background: black;
+				  right: 0;
+				  bottom: 0;
+				  background-image: linear-gradient(to right, #5e42a6, #b74e91)
+				}
+
+			.redes{
+				width: 2em;
+				height: 2em;
+				font-size: 2em;
+			}
+	
+
+
+		
+			
+	/******SIDEBAR******/
+	.rightbar {
+		  position: relative;
+		  width: 75%;
+		  float: right;
+		  height: 100% ;
+		overflow-y: scroll;
+  scroll-behavior: smooth;
+		}
+	.contaainer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		  }
+	
+		 p {
+			 display: flex;
+			text-transform: uppercase;
+			font-size: 1em;
+			letter-spacing: 0.1em;
+			margin-top: 20px;
+		  }
+		
+	
+	
+label {
+position: relative;
+}
+label input {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+label svg {
+  width: 350px;
+  height: auto;
+  display: block;
+}
+/* include transitions for the elements modified as the input is checked */
+label input + svg .light {
+  transition: opacity 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
+}
+label input + svg .translate,
+label input + svg .rotate,
+label input + svg .background,
+label input + svg .astronaut,
+label input + svg .surfer {
+  transition: transform 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
+}
+/* make the .light element fully transparent to have the .dark variant see through */
+label input:checked + svg .light {
+  opacity: 0;
+}
+/* translate the sun/moon toward the right (by default it is pushed back with a negative translation) */
+label input:checked + svg .translate {
+  transform: translateX(0px);
+}
+/* rotate the moon (by default it is rotated counter-clockwise) */
+label input:checked + svg .rotate {
+  transform: rotate(0deg);
+}
+/* translate the scale the backgrounds to 0
+this is rather neat, so meant an extra comment
+- the light background is positioned with two groups, one pushing it below the graphic, one back up; by removing the translation of this last group the background "returns" below the toggle
+- the dark background is positioned above and with a smaller vertical scale; by removing the translation it is placed in full view and by increasing its scale it's as if the stars would tumble down with different rates
+*/
+label input:checked + svg .background {
+  transform: translate(0px) scale(1);
+}
+
+}
+@media (prefers-color-scheme: light) {
+ .rightbar {
+			background-color: #d6e7f7;
+	 		color: black
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+ .rightbar {
+			background-color: black;
+	 		color: white
+	}
+}
+

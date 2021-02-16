@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="author" content="Wilner Andres Obregon Vargas">
+	<meta name="keywords" content="PROVA,WEB,SMX,CENDRASSOS">
+	
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  	<!--Font Awesome -->
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  	<!-- Logo -->
+  	<link rel="icon" type="image/png" href="imagenes/minilogo.png">
+	  
+    <title>Andrés Obregón Vargas</title>
+  </head>
+  <body>
+	<!--Aqui comienza el Menu-->
+	<main class="main">
+		<aside class="sidebar">
+			<nav class="mymenu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<div class="navbar-collapse lool" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<a href="javascript:void(0)" class="closebtn itemmenu" onclick="closeNav()" id="close">&times;</a>
+					
+					<li> <a href="index.html" > <h1 class="nameTitle "> Wilner  Andrés Obregón Vargas </h1></a></li>
+					<li class="active itemmenu"><a class="active" href="#top">  Inicio </a></li>
+					<li class="itemmenu"> <a href="#item-3-2">  Sobre mí  </a></li>
+					<li class="itemmenu"> <a href="#item-3-2">  Experiencia laboral  </a></li>
+					<li class="itemmenu"> <a href="#item-3-2">  Contacto </a></li>
+					<div class="redees">
+						<li class="left redes"> <a href="mailto:wom.obregon29@gmail.com">  <i class="fa fa-envelope correo"></i></a></li>
+						<li class="redes"> <a href="https://www.linkedin.com/in/andrés-obregón-vargas-4a8b64187/"> <i class="fa fa-linkedin Linkedin"></i></a></li>
+						<li class="redes"> <a href="https://t.me/AndresObregonV"> <i class="fa fa-telegram Telegram"></i></a></li>
+						<li class="redes"> <a href="https://twitter.com/TheColombianAnd"> <i class="fa fa-twitter twitter"></i></a></li>
+						<li class="redes"> <a href="https://github.com/AndresObregon"> <i class="fa fa-github-alt Github"></i></a> </li>
+						<li class="redes"> <a href="https://www.instagram.com/andrees_obreegon/"> <i class="fa fa-instagram Instagram"></i></a></li>
+					</div>
+				  </ul>
+				</div>
+				
+			</nav>
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open">&#9776; open</span>
+			
+		</aside><!--Aqui termina el Menu-->
+		
+		<section class="rightbar">
+			<div class="container contaainer">
+				<!--<div><label for="toggle">
+
+        <rect id="background" x="0" y="0" width="90" height="40" rx="20"></rect>
+
+        
+        <clipPath id="clip">
+            <use href="#background"></use>
+        </clipPath>
+
+        
+        <linearGradient id="gradient-light" x1="0" x2="0" y1="0" y2="1">
+            <stop stop-color="#8bc8f2" offset="0"></stop>
+            <stop stop-color="#fff" offset="1"></stop>
+        </linearGradient>
+
+        
+        <filter id="blur-light">
+            <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+        </filter>
+
+        
+        <pattern id="pattern-light" width="0.1" height="1" viewBox="0 0 10 45">
+            <path fill="#40b5f8" d="M 0 0 a 6 6 0 0 0 10 0 v 45 h -10 z"></path>
+        </pattern>
+
+        <linearGradient id="gradient-dark" x1="0" x2="0" y1="0" y2="1">
+            <stop stop-color="#1F2241" offset="0"></stop>
+            <stop stop-color="#7D59DF" offset="1"></stop>
+        </linearGradient>
+
+       
+        <linearGradient id="gradient-mask" x1="0" x2="0" y1="0" y2="1">
+            <stop stop-color="#000" offset="0"></stop>
+            <stop stop-color="#fff" offset="1"></stop>
+        </linearGradient>
+
+        
+        <mask id="mask-dark">
+            <use fill="url(#gradient-mask)" href="#background"></use>
+        </mask>
+
+        <radialGradient id="gradient-moon">
+            <stop stop-color="#fdfdfd" offset="0.7"></stop>
+            <stop stop-color="#e2e2e2" offset="1"></stop>
+        </radialGradient>
+
+        <radialGradient id="gradient-crater">
+            <stop stop-color="#e0e0e0" offset="0"></stop>
+            <stop stop-color="#d9d9d9" offset="1"></stop>
+        </radialGradient>
+
+        <pattern id="pattern-dark" width="0.2" height="1" viewBox="0 0 20 45">
+            <path fill="#fff" d="M 2 5 l 1 1 l -1 1 l -1 -1 l 1 -1"></path>
+            <path fill="#fff" d="M 10 16 l 1 1 l -1 1 l -1 -1 l 1 -1"></path>
+            <path fill="#fff" d="M 16 27 l 1 1 l -1 1 l -1 -1 l 1 -1"></path>
+            <path fill="#fff" d="M 10 38 l 1 1 l -1 1 l -1 -1 l 1 -1"></path>
+        </pattern>
+    </defs>
+
+    <g transform="translate(5 2.5)">
+        <g clip-path="url(#clip)">
+            <g class="dark">
+                <use fill="url(#gradient-dark)" href="#background"></use>
+                
+                <g class="background" transform="translate(0 -40) scale(1 0.4)">
+                    <rect transform="translate(-40 0) rotate(4)" fill="url(#pattern-dark)" x="0" y="0" width="100" height="45"></rect>
+                </g>
+                <use mask="url(#mask-dark)" fill="url(#gradient-dark)" href="#background"></use>
+            </g>
+            <g class="light">
+                <use fill="url(#gradient-light)" href="#background"></use>
+              
+                <g class="background" transform="translate(-30 -20)">
+                    <g transform="translate(30 20)">
+                        <rect fill="url(#pattern-light)" x="-5" y="27.5" width="100" height="45"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+
+    <g transform="translate(77.5 22.5)">
+       
+        <g class="translate" transform="translate(-55)">
+            
+            <g class="rotate" transform="rotate(-100)">
+                <g class="dark">
+                    <circle fill="url(#gradient-moon)" cx="0" cy="0" r="20.5"></circle>
+                    <g transform="translate(-8 -7.5)">
+                        <ellipse transform="rotate(-30)" fill="url(#gradient-crater)" stroke="#d5d5d5" stroke-width="0.2" cx="0" cy="0" rx="4" ry="3"></ellipse>
+                    </g>
+                    <g transform="translate(11 5)">
+                        <ellipse fill="url(#gradient-crater)" stroke="#d5d5d5" stroke-width="0.2" cx="0" cy="0" rx="3.85" ry="4"></ellipse>
+                    </g>
+                    <g transform="translate(-6 12)">
+                        <ellipse transform="rotate(-10)" fill="url(#gradient-crater)" stroke="#d5d5d5" stroke-width="0.2" cx="0" cy="0" rx="2" ry="1.75"></ellipse>
+                    </g>
+                </g>
+            </g>
+            <g class="light">
+                <circle fill="#FFD21F" cx="0" cy="0" r="21" filter="url(#blur-light)"></circle>
+                <circle fill="#FFD21F" cx="0" cy="0" r="20.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg></div>-->
+	  
+			  <h4 id="item-1">Item 1</h4>
+			  <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliquLaborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. a quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+			  <h5 id="item-1-1">Item 1-1</h5>
+			  <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. LabLaborum nisi sLaborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. iQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. orum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tt est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+			  <h5 id="item-1-2">Item 1-2</h5>
+			  <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laborisQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est t ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullaLaborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. mco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+			  <h4 id="item-2">Item 2</h4>
+			  <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+			  <h4 id="item-3">Item 3</h4>
+			  <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duLaborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. is laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliquLaborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. a esse irure. Laborum nisi sit est temQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tpor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+			  <h5 id="item-3-1">Item 3-1</h5>
+			  <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. ELaborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. sse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+			  <h5 id="item-3-2">Item 3-2</h5>
+			  <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nuLaborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. lla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+			</div>
+		</section>
+  	</main>
+	  
+	  
+    <!-- Optional JavaScript; choose one of the two! -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Mis propios scripts -->
+  	<script src="scripts/misScripts.js"></script>
+	  <script>
+function openNav() {
+  document.getElementById("v-pills-tab").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("v-pills-tab").style.width = "0%";
+}
+</script>
+ 
+  </body>
+</html>

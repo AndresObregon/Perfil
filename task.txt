@@ -1,0 +1,6 @@
+Diseñar el menu para mobil
+Seleccionar Imagen SIDEBAR left
+Configurar he implementar modo oscuro y modo dia
+scroll animaciom
+hacer que cuando vas a otro apartado de la pagina se selecione el apartado en el que esta en el menu
+Hacer boton para ir a arriba del todo desde movil
