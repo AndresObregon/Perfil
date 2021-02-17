@@ -1,6 +1,7 @@
 /* CSS Document */
 
 @media only screen and  (min-width: 50px){
+	
 	.mymenu{
 	  height: 100%;
   	  width: 0;
@@ -46,6 +47,40 @@
 	#close{
 		color: white;
 	}
+	#opeen{
+		margin:25px 5px 5px 5px;
+		text-transform: uppercase;
+		font-size:12px;
+		letter-spacing: 0;
+		line-height: 1.5;
+		color: red;
+	}
+	#abrir{
+		cursor:pointer;
+		font-size:25px;
+		width: 75px;
+		height: 20px;
+		position: relative;
+		text-align: right;
+		left: 80%;
+		bottom:  60px;
+		
+	}
+	#opeen h1{
+		font-size: 5vw;
+    	font-weight: bold;
+		letter-spacing: 0;
+    	line-height: 1;
+	}
+	#open p{
+		margin-top: 10px;
+		font-size: 16px;
+		font-weight: 400;
+		letter-spacing: 0;
+		line-height: 1.5;
+    
+	}
+	
 	.nameTitle{
 			font-size: 2em;
 			color: white;
@@ -75,6 +110,26 @@
 			.redes:hover{
 				background-color: black!important;
 			}
+		.ir-arriba{
+		  display:none;
+		  background-color:red;
+		  font-size:20px;
+		  color:black;
+		  cursor:pointer;
+		  position:fixed;
+		  bottom:10px;
+		  right:10px;
+		}
+	.goUp{
+		position: fixed;
+		float: right;
+		width: 50px;
+		height: 50px;
+		background-color:red;
+		border-radius: 100%;
+		cursor:pointer;
+		z-index:2;
+	}
 
 }
 
@@ -195,7 +250,7 @@
 		  float: right;
 		  height: 100% ;
 		overflow-y: scroll;
-  scroll-behavior: smooth;
+		scroll-behavior: smooth;
 		}
 	.contaainer {
 			display: flex;
@@ -214,7 +269,7 @@
 		  }
 		
 	
-	
+/*	
 label {
 position: relative;
 }
@@ -231,7 +286,7 @@ label svg {
   height: auto;
   display: block;
 }
-/* include transitions for the elements modified as the input is checked */
+/* include transitions for the elements modified as the input is checked *//*
 label input + svg .light {
   transition: opacity 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
 }
@@ -242,15 +297,15 @@ label input + svg .astronaut,
 label input + svg .surfer {
   transition: transform 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
 }
-/* make the .light element fully transparent to have the .dark variant see through */
+/* make the .light element fully transparent to have the .dark variant see through *//*
 label input:checked + svg .light {
   opacity: 0;
 }
-/* translate the sun/moon toward the right (by default it is pushed back with a negative translation) */
+/* translate the sun/moon toward the right (by default it is pushed back with a negative translation) *//*
 label input:checked + svg .translate {
   transform: translateX(0px);
 }
-/* rotate the moon (by default it is rotated counter-clockwise) */
+/* rotate the moon (by default it is rotated counter-clockwise) *//*
 label input:checked + svg .rotate {
   transform: rotate(0deg);
 }
@@ -258,11 +313,12 @@ label input:checked + svg .rotate {
 this is rather neat, so meant an extra comment
 - the light background is positioned with two groups, one pushing it below the graphic, one back up; by removing the translation of this last group the background "returns" below the toggle
 - the dark background is positioned above and with a smaller vertical scale; by removing the translation it is placed in full view and by increasing its scale it's as if the stars would tumble down with different rates
-*/
+*//*
 label input:checked + svg .background {
   transform: translate(0px) scale(1);
 }
 
+*/
 }
 @media (prefers-color-scheme: light) {
  .rightbar {

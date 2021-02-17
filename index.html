@@ -27,11 +27,11 @@
 				<ul class="navbar-nav mr-auto">
 					<a href="javascript:void(0)" class="closebtn itemmenu" onclick="closeNav()" id="close">&times;</a>
 					
-					<li> <a href="index.html" > <h1 class="nameTitle "> Wilner  Andrés Obregón Vargas </h1></a></li>
-					<li class="active itemmenu"><a class="active" href="#top">  Inicio </a></li>
-					<li class="itemmenu"> <a href="#item-3-2">  Sobre mí  </a></li>
-					<li class="itemmenu"> <a href="#item-3-2">  Experiencia laboral  </a></li>
-					<li class="itemmenu"> <a href="#item-3-2">  Contacto </a></li>
+					<li> <a href="index.html" > <h1 class="nameTitle "> Wilner Andrés Obregón Vargas </h1></a></li>
+					<li class="active itemmenu"><a class="active" href="#top"><span onclick="closeNav()" >Inicio </span></a></li>
+					<li class="itemmenu"> <a href="#AboutMe"><span onclick="closeNav()" >Sobre mí  </span></a></li>
+					<li class="itemmenu"> <a href="#ExpeLaboral"><span onclick="closeNav()" >Experiencia laboral  </span></a></li>
+					<li class="itemmenu"> <a href="#Contacto"><span onclick="closeNav()" >Contacto </span></a></li>
 					<div class="redees">
 						<li class="left redes"> <a href="mailto:wom.obregon29@gmail.com">  <i class="fa fa-envelope correo"></i></a></li>
 						<li class="redes"> <a href="https://www.linkedin.com/in/andrés-obregón-vargas-4a8b64187/"> <i class="fa fa-linkedin Linkedin"></i></a></li>
@@ -44,11 +44,16 @@
 				</div>
 				
 			</nav>
-			<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open">&#9776; open</span>
+			<div id="opeen">
+				<h1>Andrés Obregón Vargas</h1>
+				<p>Técnico en sistemas microinformáticos y redes</p>
+				<div onclick="openNav()" id="abrir">&#9776;</div> 
+				</div>
 			
 		</aside><!--Aqui termina el Menu-->
 		
 		<section class="rightbar">
+		
 			<div class="container contaainer">
 				<!--<div><label for="toggle">
 
@@ -173,6 +178,7 @@
 			  <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nuLaborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi siQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. lla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempQuis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
 			</div>
 		</section>
+		
   	</main>
 	  
 	  
@@ -184,13 +190,25 @@
   <!-- Mis propios scripts -->
   	<script src="scripts/misScripts.js"></script>
 	  <script>
-function openNav() {
-  document.getElementById("v-pills-tab").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("v-pills-tab").style.width = "0%";
-}
+		
+			 
+			function openNav() {
+				if (screen.width < 1220){ 
+					console.log('Es Pequeña');
+					document.getElementById("v-pills-tab").style.width = "100%";
+				}else{
+					console.log('Es Grande');
+				}
+			}
+			function closeNav() {
+				if (screen.width < 1220){ 
+					console.log('Es Pequeña');
+					document.getElementById("v-pills-tab").style.width = "0%";
+				}else{
+					console.log('Es Grande');
+				}
+			}
+		
 </script>
  
   </body>
